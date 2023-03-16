@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "onlinepizza-7427b": {
+      "hosting": {
+        "onlinestore": [
+          "onlinepizza-7427b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "onlinepizza-7427b"
+  }
+}

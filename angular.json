@@ -51,7 +51,13 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -91,8 +97,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "onlinestore:build:production",
+            "firebaseProject": "onlinepizza-7427b",
+            "firebaseHostingSite": "onlinepizza-7427b"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "4da86349-80da-46f3-acf0-639fc3a22c57"
   }
 }

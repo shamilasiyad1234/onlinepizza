@@ -1,0 +1,25 @@
+<div class="wrapper">
+    <div class="contact__container">
+            <div class="contact__title">
+                    <h2>Contact us<hr></h2>
+
+            </div>
+            <form class="contact__form">
+                    <p>Name</p>
+                    <input class="contact__form-input" [(ngModel)]="name"  name="kk" type="text">
+
+                    <p>Email</p>
+                    <input class="contact__form-input" [(ngModel)]="email" name="hh" type="text">
+
+                    <p>Phone Number</p>
+                    <input class="contact__form-input" [(ngModel)]="phonenumber" name="nn" type="number">
+
+                  
+
+                    <p>Message</p>
+                    <textarea class="contact__form-textarea" [(ngModel)]="message" type="text"></textarea>
+
+                    <input type="submit" (click)="contact()" value="Send message">
+            </form>
+    </div>
+</div>

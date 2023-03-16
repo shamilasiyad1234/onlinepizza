@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+}
+.coverPageSlide {
+  height: 70vh;
+  width: 90vw;
+  background-image: url("https://cdn.britannica.com/08/177308-131-DFD947AD/Food-Pizza-Basil-Tomato.jpg");
+  background-size: cover;
+  animation: myAnimation alternate infinite 14s;
+  -webkit-animation: myAnimation alternate infinite 14s;
+  -moz-animation: myAnimation alternate infinite 14s;
+  -ms-animation: myAnimation alternate infinite 14s;
+  -o-animation: myAnimation alternate infinite 14s;
+}
+@keyframes myAnimation {
+  33.33% {
+    background-image: url("https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395__480.jpg");
+  }
+  66.66% {
+    background-image: url("https://static.toiimg.com/thumb/53110049.cms?width=1200&height=900");
+  }
+  99.99% {
+    background-image: url("https://images.healthshots.com/healthshots/en/uploads/2023/02/09155200/pizza-1.jpg");
+  }
+}
+
+.p{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+.body{
+  background-color: blanchedalmond;
+}
+
+
+/*
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+  }
+  */
